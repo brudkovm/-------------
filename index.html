@@ -42,7 +42,7 @@
 
         </div>
     </header>
-    <div class="container__sections">
+    <main class="container__sections">
         <div class="primary__column">
             <div class="primary__column-content">
                 <div class="about__me">
@@ -53,7 +53,15 @@
                     <h2><a href="myprojects.html">Мои проекты</a></h2>
                 </div>
                 <div class="tutorials">
-                    <h2>Учебные проекты</h2>
+                    <div class="title tutorials-title">
+                        <h2>Учебные проекты</h2>
+                        <button type="button" class="btn">
+                            <span class="plus">+</span>
+                            <span class="minus">-</span>
+                        </button>
+
+                    </div>
+                    <span class="text"> Адаптивная верстка 2х-страничного сайта</span>
                 </div>
             </div>
 
@@ -62,10 +70,16 @@
         <div class="second__column">
             <div class="second__column-content">
 
-
                 <div class="skills">
-                    <h2>Навыки</h2>
-                    <ul>
+                    <div class="title skills-title">
+                        <h2>Навыки</h2>
+                        <button type="button" class="btn">
+                            <span class="plus">+</span>
+                            <span class="minus">-</span>
+                        </button>
+
+                    </div>
+                    <ul class="text">
                         <li>HTML</li>
                         <li>CSS</li>
                         <li>JavaScript</li>
@@ -73,18 +87,27 @@
                     </ul>
                 </div>
                 <div class="education">
-                    <h2>Образование</h2>
-                    <p>htmlacademy.ru - тренажеры(выполнено более 400 упражнений);<br>курс И.Петриченко на Udemy "JavaScript + React - с нуля до результата";
+                    <div class="title education-title">
+                        <h2>Образование</h2>
+                        <button type="button" class="btn">
+                            <span class="plus">+</span>
+                            <span class="minus">-</span>
+                        </button>
+
+                    </div>
+
+                    <p class="text">htmlacademy.ru - тренажеры(выполнено более 400 упражнений);<br>курс И.Петриченко на Udemy "JavaScript + React - с нуля до результата";
                     </p>
                 </div>
             </div>
         </div>
-    </div>
+    </main>
     <footer class="footer">
         <div class="footer__container">
             <div class="copyright">© 2022 моепортфолио.com</div>
         </div>
     </footer>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

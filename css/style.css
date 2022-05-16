@@ -1,13 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@400;700&display=swap');
 * {
-    margin: 0 auto;
+    margin: 0;
+    padding: 0;
 }
 
 body {
+    display: flex;
+    flex-direction: column;
     font-family: 'Lato', arial, sans-serif;
     color: #434343;
     background: #DAE3E7;
     font-size: 16px;
+    height: 100vh;
 }
 
 h1,
@@ -21,6 +25,7 @@ h6 {
 }
 
 .header {
+    width: 100%;
     padding: 30px 0;
     background: #f5f5f5;
     border-top: 10px solid #778492;
@@ -93,16 +98,22 @@ h6 {
 }
 
 .container__sections {
+    flex-grow: 1;
     padding-top: 60px;
     padding-bottom: 60px;
     max-width: 1140px;
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .primary__column {
     padding-right: 90px;
+    width: 733px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .primary__column-content {
@@ -131,6 +142,12 @@ h6 {
     margin-bottom: 15px;
 }
 
+.second__column {
+    width: 366px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .second__column-content {
     display: flex;
     flex-direction: column;
@@ -156,6 +173,36 @@ h6 {
     box-sizing: border-box;
 }
 
+.title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    width: 23px;
+    height: 23px;
+    align-self: center;
+}
+
+.text {
+    margin-top: 10px;
+}
+
+.show_text .text,
+.show_text .plus {
+    display: none;
+}
+
+.text,
+.minus {
+    display: none;
+}
+
+.show_text .minus,
+.show_text .text {
+    display: block;
+}
+
 .education {
     background: #fff;
     padding: 30px;
@@ -179,6 +226,8 @@ h6 {
 
 .footer__container {
     max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .page {

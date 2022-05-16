@@ -38,6 +38,8 @@ h6 {
     justify-content: space-between;
     max-width: 1140px;
     flex-grow: 1;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .footer {
@@ -55,4 +57,6 @@ h6 {
 
 .footer__container {
     max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
 }
