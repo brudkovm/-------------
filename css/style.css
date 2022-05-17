@@ -165,6 +165,10 @@ h6 {
     box-sizing: border-box;
 }
 
+.tutorials li {
+    list-style-type: none;
+}
+
 .skills {
     background: #fff;
     padding: 30px;
@@ -186,6 +190,8 @@ h6 {
 
 .text {
     margin-top: 10px;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 1rem 0px 0.5rem 0px;
 }
 
 .show_text .text,
@@ -209,11 +215,8 @@ h6 {
     margin-bottom: 15px;
 }
 
-.list__about {}
-
 .footer {
     display: flex;
-    height: 70px;
     background: #f5f5f5;
     border-bottom: 10px solid #778492;
     align-items: center;
@@ -225,9 +228,15 @@ h6 {
 }
 
 .footer__container {
+    height: 70px;
     max-width: 1140px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.copyright {
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
 
 .page {
