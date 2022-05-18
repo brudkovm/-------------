@@ -1,0 +1,1 @@
+const discount_button = document.querySelector('.discount-button');
