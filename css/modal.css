@@ -73,6 +73,11 @@ h6 {
     border: none;
     background: #e51616;
     color: #fff;
+    padding: 5px 5px;
+}
+
+.close-discount {
+    visibility: hidden;
 }
 
 .modal-overlay {
@@ -85,6 +90,20 @@ h6 {
     box-shadow: 0 4px 8px rgb(0 0 0 / 24%);
     border: 1px solid #c7c7c7;
     visibility: hidden;
+}
+
+.open-modal {
+    visibility: visible;
+}
+
+.modal-close {
+    position: absolute!important;
+    top: 22px;
+    right: 22px;
+    background: white;
+    font-weight: 500;
+    border: none;
+    padding: 5px;
 }
 
 form {

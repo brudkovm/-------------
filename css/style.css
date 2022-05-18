@@ -165,6 +165,10 @@ h6 {
     box-sizing: border-box;
 }
 
+.projects li {
+    list-style-type: none;
+}
+
 .tutorials li {
     list-style-type: none;
 }
