@@ -142,6 +142,10 @@ form small {
     padding: 10px 20px;
 }
 
+.button-green:hover {
+    background: #5bc238;
+}
+
 .footer {
     flex-shrink: 0;
     display: flex;
