@@ -37,6 +37,7 @@ function addItem(e) {
         list.appendChild(element);
         displayAlert_positive();
         setBackToDefault();
+        container.classList.add('not-hidden');
     } else if (value !== '' && editFlag === true) {
         console.log('editing');
     } else {
