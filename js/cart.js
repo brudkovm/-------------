@@ -15,14 +15,15 @@ let editId = "";
 
 //добавляем eventlistener
 form.addEventListener('submit', addItem) //submit это и есть click по кнопке формы
+    //clear items
+clearBtn.addEventListener('click', clearItems)
 
-//пишем функции
+// функции
 
 function addItem(e) {
     e.preventDefault(); //потому что по умолчанию у клика по форме есть встроенные действия
     const value = cart.value;
     const id = new Date().getTime().toString();
-    console.log(cart.value);
     if (value !== '' && editFlag === false) {
         const element = document.createElement('article');
         element.classList.add('cart-item');
@@ -34,12 +35,18 @@ function addItem(e) {
             <button type="button" class="edit-btn">ред</button>
             <button type="button" class="delete-btn">уд</button>
         </div>`;
+        const deleteBtn = element.querySelector('.delete-btn'); //создаем переменные тут чтобы обращаться к ним когда 
+        const editBtn = element.querySelector('.edit-btn'); //они уже реально созданы
+        deleteBtn.addEventListener('click', deleteItem);
+        editBtn.addEventListener('click', editItem);
         list.appendChild(element);
         displayAlert_positive();
         setBackToDefault();
         container.classList.add('not-hidden');
     } else if (value !== '' && editFlag === true) {
-        console.log('editing');
+        editElement.innerHTML = value;
+        displayAlert_positive();
+        setBackToDefault();
     } else {
         displayAlert();
     };
@@ -68,4 +75,28 @@ function setBackToDefault() {
     editFlag = false;
     editId = '';
     submitBtn.textContent = 'Добавить';
+}
+//удаляем 1 позицию товара
+function deleteItem(e) {
+    const element = e.currentTarget.parentElement.parentElement; //так мы выбираем конкретный кликнутый элемент списка
+    list.removeChild(element);
+    if (list.children.length === 0) {
+        container.classList.remove('not-hidden');
+        displayAlert();
+    }
+}
+
+function editItem(e) {
+    // const element = e.currentTarget.parentElement.parentElement; //здесь зачем?
+    editElement = e.currentTarget.parentElement.previousElementSibling;
+    cart.value = editElement.innerHTML;
+    editFlag = true;
+    submitBtn.innerHTML = `Изменить`;
+}
+
+
+function clearItems() {
+    list.innerHTML = ``;
+    container.classList.remove('not-hidden');
+    displayAlert();
 }
