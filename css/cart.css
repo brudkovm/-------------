@@ -58,6 +58,10 @@ h6 {
     padding: 2rem;
 }
 
+.section-center:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
 .cart-container {
     margin-top: 1rem;
     visibility: hidden;
@@ -181,8 +185,13 @@ h6 {
     border-bottom-right-radius: 0.5rem;
     cursor: pointer;
     content: #49a6e9;
-    transition: all 0.3s linear;
+    transition: all 0.1s linear;
     font-size: 0.85rem;
+}
+
+.submit-btn:hover {
+    background: #49a6e9;
+    color: aliceblue;
 }
 
 .clear-btn {
