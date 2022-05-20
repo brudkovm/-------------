@@ -87,7 +87,6 @@ function deleteItem(e) {
 }
 
 function editItem(e) {
-    // const element = e.currentTarget.parentElement.parentElement; //здесь зачем?
     editElement = e.currentTarget.parentElement.previousElementSibling;
     cart.value = editElement.innerHTML;
     editFlag = true;
