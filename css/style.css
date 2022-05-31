@@ -249,7 +249,7 @@ h6 {
 
 @media (max-width:1200px) {
     .header .container {
-        width: 100%;
+        width: 822px;
     }
     .wrapper {
         padding-right: 25px;
@@ -260,5 +260,11 @@ h6 {
     .container__sections {
         flex-direction: column;
         align-items: center;
+    }
+    .second__column {
+        padding-right: 30px;
+        width: 791px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
