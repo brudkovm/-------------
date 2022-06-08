@@ -286,6 +286,9 @@
                 margin-left: 10px;
                 margin-right: 10px;
             }
+            .wrapper {
+                padding-right: 56px;
+            }
             .primary__column {
                 width: auto;
             }
